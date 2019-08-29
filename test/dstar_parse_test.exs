@@ -3,7 +3,7 @@ defmodule DstarParseTest do
 
   use ExUnit.Case
 
-  describe "DPLUS" do
+  describe "DstarParse.parse_file" do
     test "returns a ReflectorInfo" do
       assert {:ok, %ReflectorInfo{name: "REF053 Reflector System"}} =
                DstarParse.parse_file("test/fixtures/ref053.html")
